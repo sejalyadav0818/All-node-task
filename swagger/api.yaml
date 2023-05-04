@@ -1,0 +1,48 @@
+# swagger : "2.0"
+# info:
+#    title : Swagger api test
+#    description : Crud operation using sequelize
+#    version : 1.0
+#    contact : 
+#        email : sejalyadav122@gmail.com
+#     liscence:
+#     name: Apache 2.0
+#     url: "http://www.apache.org/liscences/LIS"
+#   servers:
+#     -url: http://localhost:4000
+#     description: THis is my local Server
+#     -url: http://example.com/
+#     description: This is my original URL
+# schemes: [https,http]
+swagger: "2.0"
+info:
+  title: CRUD API
+  description: This is  API Documentation
+  version: 1.0
+  contact:
+    email: syosas@gmail.com
+  liscence:
+    name: Apache 2.0
+    url: "http://www.apache.org/liscences/LIS"
+  servers:
+    -url: http://localhost:4000
+    description: THis is my local Server
+    -url: http://example.com/
+    description: This is my original URL
+schemes: [https,http]
+
+
+paths : 
+  /string :
+   get:
+     summary : Return a user details  
+     description : it is just retruning a user details from user table
+     responses : 
+         200 : 
+            description : success.
+         400 :
+            description : error occur.
+         500 :
+            description : Internal server error.
+
+            
